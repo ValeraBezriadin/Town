@@ -139,7 +139,7 @@ body {
   list-style: none;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 60px ;
+  margin-bottom: 60px;
 }
 .showcase__nav-button {
   color: #ffffff;
@@ -190,10 +190,12 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
-.showcase-item {
+.showcase__item {
   border-bottom: 14px;
-  
+  margin-bottom: 25px;
+  margin-right: 18px;
 }
 .showcase__item:nth-child(3) {
   margin-right: 0;
@@ -205,8 +207,10 @@ body {
   max-width: 590px;
   width: 100%;
   height: 480px;
+  display: flex;
+  align-items: flex-end;
 }
-.showcase-wrapper {
+.showcase__wrapper {
   background-color: #272727;
   height: 410px;
   width: 285px;
@@ -215,4 +219,86 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+}
+.showcase__item-img {
+  border-radius: 14px;
+}
+.showcase__item-link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+.showcase__item-link::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./img/icons/arrow.svg);
+  right: -80px;
+  top: 10px;
+}
+
+.showcase__add::before {
+  content: "+";
+  position: absolute;
+  color: #ffffff;
+  background-color: #272727;
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+  top: 25px;
+  right: 25px;
+  border-radius: 50%;
+  z-index: 1;
+  line-height: 25px;
+  text-align: center;
+}
+.showcase__wrapper:hover .showcase__add::before {
+  background-color: #c80000;
+  height: 37px;
+  width: 37px;
+  line-height: 37px;
+  transition: background-color 0.6s linear;
+}
+.showcase__text {
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+}
+.showcase__price {
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  opacity: 0.6;
+}
+.showcase__mailing {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+}
+.showcase__form {
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 300px;
+  background-color: #272727;
+  border-radius: 6px;
+}
+.showcase__input {
+  border: none;
+  background-color: inherit;
 }
