@@ -197,7 +197,7 @@ body {
   margin-bottom: 25px;
   margin-right: 18px;
 }
-.showcase__item:nth-child(3) {
+.showcase__item--child {
   margin-right: 0;
 }
 .showcase__item:last-child {
@@ -292,13 +292,33 @@ body {
 }
 .showcase__form {
   margin: 0 auto;
-
   width: 100%;
   max-width: 300px;
   background-color: #272727;
   border-radius: 6px;
+  margin-bottom: 50px;
 }
 .showcase__input {
+  padding: 20px 25px;
   border: none;
   background-color: inherit;
+}
+.showcase__button {
+  border: none;
+  width: 18px;
+  height: 18px;
+  padding: 5px;
+  position: relative;
+  background-color: transparent;
+}
+.showcase__button::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url(./img/icons/right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: -40px;
+  top: -2px;
 }
