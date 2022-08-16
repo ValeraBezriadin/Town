@@ -209,6 +209,7 @@ body {
   height: 480px;
   display: flex;
   align-items: flex-end;
+  border-radius: 16px;
 }
 .showcase__wrapper {
   background-color: #272727;
@@ -233,6 +234,7 @@ body {
   color: #ffffff;
   padding-left: 25px;
   margin-bottom: 30px;
+  position: relative;
 }
 .showcase__item-link::before {
   content: "";
@@ -251,14 +253,14 @@ body {
   position: absolute;
   color: #ffffff;
   background-color: #272727;
-  height: 24px;
-  width: 24px;
+  height: 37px;
+  width: 37px;
   font-size: 24px;
   top: 25px;
   right: 25px;
   border-radius: 50%;
   z-index: 1;
-  line-height: 25px;
+  line-height: 37px;
   text-align: center;
 }
 .showcase__wrapper:hover .showcase__add::before {
@@ -266,7 +268,7 @@ body {
   height: 37px;
   width: 37px;
   line-height: 37px;
-  transition: background-color 0.6s linear;
+  transition: background-color 0.5s linear;
 }
 .showcase__text {
   font-family: "Montserrat";
@@ -281,7 +283,8 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 28px;
-  opacity: 0.6;
+  opacity: 0.5;
+  margin-right: 28px;
 }
 .showcase__mailing {
   font-weight: 500;
@@ -289,6 +292,7 @@ body {
   line-height: 42px;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 20px;
 }
 .showcase__form {
   margin: 0 auto;
@@ -321,4 +325,58 @@ body {
   background-size: contain;
   right: -40px;
   top: -2px;
+}
+.showcase__new {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ff3232;
+  display: inline-block;
+}
+.showcase__new::first-letter {
+  text-transform: uppercase;
+}
+.showcase__line {
+  display: block;
+  opacity: 0.1;
+  border: 1px solid #ffffff;
+}
+.popular {
+  padding: 60px 0;
+}
+.popular__buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.popular__btn {
+  margin-right: 50px;
+  border: none;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 42px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.popular__active {
+  color: #ffffff;
+  opacity: 1;
+  position: relative;
+}
+.popular__active::before {
+  content: "";
+  position: absolute;
+  width: 94px;
+  height: 2px;
+
+  background-color: #c80000;
+  bottom: 5px;
 }
