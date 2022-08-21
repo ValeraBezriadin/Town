@@ -148,6 +148,7 @@ body {
   padding-top: 75px;
   position: relative;
   cursor: pointer;
+  transition: 0.3s;
 }
 .showcase__nav-button::before {
   content: "";
@@ -181,6 +182,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  justify-content: center;
 }
 .showcase__item {
   border-bottom: 14px;
@@ -378,4 +380,105 @@ body {
 
   background-color: #c80000;
   bottom: 5px;
+}
+.legend {
+  padding: 60px 0 30px 0;
+}
+.legend .container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .legend .container {
+    flex-direction: row;
+  }
+}
+.legend__left {
+  margin-right: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.legend__left-img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .legend__left {
+    width: 300px;
+    min-width: 300px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .legend__left {
+    margin-right: 80px;
+  }
+}
+.legend__right-head,
+.insrument__left-head {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 992px) {
+  .legend__right-head,
+  .insrument__left-head {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+}
+.legend__right-text,
+.insrument__left-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  .legend__right-text,
+  .insrument__left-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.instrument .container {
+  display: flex;
+  flex-direction: column;
+}
+.instrument__left {
+  margin-bottom: 20px;
+}
+.instrument__right {
+  width: 100%;
+}
+.instrument__img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .instrument .container {
+    flex-direction: row;
+  }
+  .instrument__left {
+    margin-bottom: 0px;
+  }
+  .instrument__img {
+    width: 300px;
+    min-width: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .instrument__left {
+    margin-right: 80px;
+  }
 }
