@@ -212,9 +212,11 @@ body {
   line-height: 28px;
   text-decoration: none;
   color: #ffffff;
-  padding-left: 25px;
+  padding-left: 30px;
+  padding-right: 56px;
   margin-bottom: 30px;
   position: relative;
+  width: 100%;
 }
 .showcase__item-link::before {
   content: "";
@@ -224,7 +226,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(./img/icons/arrow.svg);
-  right: -80px;
+  right: 30px;
   top: 10px;
 }
 .showcase__wrapper {
@@ -550,6 +552,32 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.interesting__list_item--text{
+  width: 100%;
+  padding: 22px 33px ;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  transition: .3s;
+}
+.interesting__list_item--text:hover{
+  background-color: #c80000;
+}
+@media screen and (min-width: 560px){
+  .interesting__list_item {
+    width: calc((100% - 32px)/2);
+  }
+  .interesting__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+}
 @media screen and (min-width: 992px) {
   .interesting__title {
     font-size: 35px;
@@ -560,7 +588,7 @@ body {
     padding: 60px 0;
   }
   .interesting__list {
-    display: flex;
+    
     gap: 28px;
   }
   .interesting__list_item {
@@ -571,4 +599,5 @@ body {
     right: 25px;
     top: 25px;
   }
+  
 }
