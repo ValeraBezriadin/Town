@@ -217,13 +217,14 @@
     </section>
     <span class="showcase__line"></span>
     <section class="popular">
-      <div class="container">
-        <div class="popular__buttons">
-          <button class="popular__btn popular__active">НОВИНКИ</button>
-          <button class="popular__btn">ПОПУЛЯРНОЕ</button>
+      <div class="container" id="showcase-content-1">
+        <div class="popular__buttons" data-navigation-showcase>
+          <button class="popular__btn popular__active" data-showcase="new">НОВИНКИ</button>
+          <button class="popular__btn" data-showcase="popular">ПОПУЛЯРНОЕ</button>
         </div>
-        <ul class="showcase__list">
-          <li class="showcase__item">
+        <div data-main-content>
+        <ul class="showcase__list showcase__show" data-content="new">
+          <li class="showcase__item" >
             <div class="showcase__wrapper">
               <span class="showcase__add"></span>
               <img
@@ -276,6 +277,61 @@
             <span class="showcase__new">новинка</span>
           </li>
         </ul>
+        <ul class="showcase__list" data-content="popular">
+          <li class="showcase__item">
+            <div class="showcase__wrapper">
+              <span class="showcase__add"></span>
+              <img
+                class="showcase__item-img"
+                src="./img/showcase/knife1.png"
+                alt="knife"
+              />
+            </div>
+            <p class="showcase__text">Складной нож SQ01-B</p>
+            <span class="showcase__price">1110 грн</span>
+            <span class="showcase__new">популярное</span>
+          </li>
+          <li class="showcase__item">
+            <div class="showcase__wrapper">
+              <span class="showcase__add"></span>
+              <img
+                class="showcase__item-img"
+                src="./img/showcase/knife2.png"
+                alt="knife"
+              />
+            </div>
+            <p class="showcase__text">Складной нож SQ01-B</p>
+            <span class="showcase__price">21 850 грн</span>
+            <span class="showcase__new">популярное</span>
+          </li>
+          <li class="showcase__item">
+            <div class="showcase__wrapper">
+              <span class="showcase__add"></span>
+              <img
+                class="showcase__item-img"
+                src="./img/showcase/knife1.png"
+                alt="knife"
+              />
+            </div>
+            <p class="showcase__text">Складной нож SQ01-B</p>
+            <span class="showcase__price">7900 грн</span>
+            <span class="showcase__new">популярное</span>
+          </li>
+          <li class="showcase__item">
+            <div class="showcase__wrapper">
+              <span class="showcase__add"></span>
+              <img
+                class="showcase__item-img"
+                src="./img/showcase/knife2.png"
+                alt="knife"
+              />
+            </div>
+            <p class="showcase__text">Складной нож SQ01-B</p>
+            <span class="showcase__price">15 850 грн</span>
+            <span class="showcase__new">популярное</span>
+          </li>
+        </ul>
+      </div>
       </div>
     </section>
     <span class="showcase__line"></span>
@@ -377,5 +433,6 @@
         </div>
       </div>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>
